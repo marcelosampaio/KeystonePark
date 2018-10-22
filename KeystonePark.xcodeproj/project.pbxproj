@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		9C95339A217E28F6004DD5DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C953399217E28F6004DD5DD /* AppDelegate.swift */; };
-		9C95339C217E28F6004DD5DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C95339B217E28F6004DD5DD /* ViewController.swift */; };
 		9C95339F217E28F6004DD5DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C95339D217E28F6004DD5DD /* Main.storyboard */; };
 		9C9533A2217E28F6004DD5DD /* KeystonePark.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C9533A0217E28F6004DD5DD /* KeystonePark.xcdatamodeld */; };
 		9C9533A4217E2912004DD5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9533A3217E2912004DD5DD /* Assets.xcassets */; };
 		9C9533A7217E2912004DD5DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9533A5217E2912004DD5DD /* LaunchScreen.storyboard */; };
+		9C9533B2217E392D004DD5DD /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9533AE217E392D004DD5DD /* Student+CoreDataClass.swift */; };
+		9C9533B3217E392D004DD5DD /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9533AF217E392D004DD5DD /* Student+CoreDataProperties.swift */; };
+		9C9533B4217E392D004DD5DD /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9533B0217E392D004DD5DD /* Lesson+CoreDataClass.swift */; };
+		9C9533B5217E392D004DD5DD /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9533B1217E392D004DD5DD /* Lesson+CoreDataProperties.swift */; };
+		9C9533B9217E3B7F004DD5DD /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9533B8217E3B7F004DD5DD /* LessonTableViewController.swift */; };
+		9C9533BC217E4489004DD5DD /* LessonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9533BB217E4489004DD5DD /* LessonService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9C953396217E28F6004DD5DD /* KeystonePark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeystonePark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C953399217E28F6004DD5DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C95339B217E28F6004DD5DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C95339E217E28F6004DD5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C9533A1217E28F6004DD5DD /* KeystonePark.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KeystonePark.xcdatamodel; sourceTree = "<group>"; };
 		9C9533A3217E2912004DD5DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C9533A6217E2912004DD5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C9533A8217E2912004DD5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C9533AE217E392D004DD5DD /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C9533AF217E392D004DD5DD /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9C9533B0217E392D004DD5DD /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C9533B1217E392D004DD5DD /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9C9533B8217E3B7F004DD5DD /* LessonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
+		9C9533BB217E4489004DD5DD /* LessonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		9C953398217E28F6004DD5DD /* KeystonePark */ = {
 			isa = PBXGroup;
 			children = (
+				9C9533BA217E446A004DD5DD /* Service */,
+				9C9533B7217E3B22004DD5DD /* Controller */,
+				9C9533B6217E396A004DD5DD /* CoreData */,
 				9C953399217E28F6004DD5DD /* AppDelegate.swift */,
-				9C95339B217E28F6004DD5DD /* ViewController.swift */,
 				9C95339D217E28F6004DD5DD /* Main.storyboard */,
 				9C9533A3217E2912004DD5DD /* Assets.xcassets */,
 				9C9533A5217E2912004DD5DD /* LaunchScreen.storyboard */,
 				9C9533A8217E2912004DD5DD /* Info.plist */,
-				9C9533A0217E28F6004DD5DD /* KeystonePark.xcdatamodeld */,
 			);
 			path = KeystonePark;
+			sourceTree = "<group>";
+		};
+		9C9533B6217E396A004DD5DD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9C9533A0217E28F6004DD5DD /* KeystonePark.xcdatamodeld */,
+				9C9533AE217E392D004DD5DD /* Student+CoreDataClass.swift */,
+				9C9533AF217E392D004DD5DD /* Student+CoreDataProperties.swift */,
+				9C9533B0217E392D004DD5DD /* Lesson+CoreDataClass.swift */,
+				9C9533B1217E392D004DD5DD /* Lesson+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9C9533B7217E3B22004DD5DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C9533B8217E3B7F004DD5DD /* LessonTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C9533BA217E446A004DD5DD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9C9533BB217E4489004DD5DD /* LessonService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C95339C217E28F6004DD5DD /* ViewController.swift in Sources */,
+				9C9533B2217E392D004DD5DD /* Student+CoreDataClass.swift in Sources */,
+				9C9533B5217E392D004DD5DD /* Lesson+CoreDataProperties.swift in Sources */,
 				9C95339A217E28F6004DD5DD /* AppDelegate.swift in Sources */,
+				9C9533BC217E4489004DD5DD /* LessonService.swift in Sources */,
 				9C9533A2217E28F6004DD5DD /* KeystonePark.xcdatamodeld in Sources */,
+				9C9533B3217E392D004DD5DD /* Student+CoreDataProperties.swift in Sources */,
+				9C9533B4217E392D004DD5DD /* Lesson+CoreDataClass.swift in Sources */,
+				9C9533B9217E3B7F004DD5DD /* LessonTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
