@@ -86,6 +86,20 @@ class LessonService {
         save()
     }
     
+    public func delete(student: Student) {
+        
+        let lesson = student.lesson
+        
+        students = students.filter({ $0 != student})
+        lesson?.removeFromStudents(student)
+        moc.delete(student)
+        
+        save()
+        
+    }
+    
+    
+    
     // MARK: - Private Functions
     private func lessonExists(_ type: LessonType) -> Lesson? {
         
