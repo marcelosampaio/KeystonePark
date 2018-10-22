@@ -61,7 +61,7 @@ class LessonTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         studentToUpdate = studentList[indexPath.row]
-        present(alertController(actionType: "update"), animated: true, completion: nil)
+        present(alertController(actionType: "Update"), animated: true, completion: nil)
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -135,7 +135,7 @@ class LessonTableViewController: UITableViewController {
             
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (action) in
-            
+            self.studentToUpdate = nil
         }
         alertController.addAction(defaultAction)
         alertController.addAction(cancelAction)
